@@ -1,0 +1,97 @@
+{
+  "hero": {
+    "title": "Contact UATC",
+    "subtitle": "We’re here to help — Admissions, Programs, ICT Support & more.",
+    "buttons": [
+      {
+        "label": "Send a Message",
+        "href": "#form",
+        "variant": "primary"
+      },
+      {
+        "label": "WhatsApp",
+        "href": "https://wa.me/255767770566",
+        "variant": "ghost"
+      },
+      {
+        "label": "Call Now",
+        "href": "tel:+255767770566",
+        "variant": "ghost"
+      }
+    ]
+  },
+  "tiles": [
+    {
+      "title": "General Enquiries",
+      "details": [
+        "info@uatc.ac.tz",
+        "Mon–Fri 8:00–17:00 (EAT)"
+      ],
+      "buttons": []
+    },
+    {
+      "title": "Admissions",
+      "details": [
+        "admission@uatc.ac.tz"
+      ],
+      "buttons": [
+        {
+          "label": "Apply via OAS",
+          "href": "http://localhost:3000/apply",
+          "variant": "ghost"
+        }
+      ]
+    },
+    {
+      "title": "ICT / OAS Support",
+      "details": [
+        "ict@uatc.ac.tz",
+        "Helpdesk: +255 614 293 747"
+      ],
+      "buttons": []
+    }
+  ],
+  "visit": {
+    "address": "P.O.BOX 36246, Kigamboni, Dar es Salaam, Tanzania",
+    "email": "info@uatc.ac.tz",
+    "phone": [
+      "+255 767 770 566",
+      "+255 614 293 747"
+    ],
+    "hours": "Mon–Fri 8:00–17:00 (EAT)",
+    "map_embed": "https://www.google.com/maps?q=Kigamboni,+Dar+es+Salaam&output=embed"
+  },
+  "faq": [
+    {
+      "question": "How do I apply?",
+      "answer": "Use our Online Application System (OAS). You can track your application there too.",
+      "button": {
+        "label": "Open OAS",
+        "href": "http://localhost:3000/apply"
+      }
+    },
+    {
+      "question": "Where can I find fees & payment details?",
+      "answer": "Fees for Certificate & Diploma programs are listed on the Admissions page. Payments can be made per the schedule indicated there.",
+      "button": {
+        "label": "View Admissions",
+        "href": "admission.html"
+      }
+    },
+    {
+      "question": "Need help with OAS or ICT?",
+      "answer": "Email ict@uatc.ac.tz or WhatsApp us. We’ll guide you step-by-step.",
+      "button": {
+        "label": "Open WhatsApp",
+        "href": "https://wa.me/255767770566"
+      }
+    }
+  ],
+  "cta": {
+    "title": "Prefer WhatsApp?",
+    "button": {
+      "label": "Chat on WhatsA",
+      "href": "https://wa.me/255767770566"
+    }
+  }
+}

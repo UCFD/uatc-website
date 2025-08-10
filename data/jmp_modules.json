@@ -1,0 +1,46 @@
+{
+  "nta4": [
+    {"code":"GSTT04101","title":"Computer Application in Journalism","credits":15},
+    {"code":"GST04102","title":"Matumizi ya Lugha ya Kiswahili katika Tasnia ya Habari","credits":14},
+    {"code":"JMT04103","title":"Journalism Industry Development","credits":5},
+    {"code":"JMT04104","title":"Core Principles of Journalism","credits":8},
+    {"code":"JMT04105","title":"Audio Mixer Operating Procedures","credits":6},
+    {"code":"JMT04106","title":"Microphone Operating Procedures","credits":6},
+    {"code":"GST04201","title":"English Language Application in Journalism","credits":13},
+    {"code":"JMT04202","title":"Journalism and Society Relationship","credits":6},
+    {"code":"JMT04203","title":"Video Mixer Operating Procedures","credits":6},
+    {"code":"JMT04204","title":"Storage Device Procedures","credits":11},
+    {"code":"JMT04205","title":"Camera Operating Procedure","credits":10},
+    {"code":"JMT04206","title":"News Investigative Skills","credits":20}
+  ],
+  "nta5": [
+    {"code":"GST05101","title":"Business Planning Writing Skills","credits":8},
+    {"code":"JMT05102","title":"News Writing and Editing Skills","credits":8},
+    {"code":"JMT05103","title":"Media Policies","credits":9},
+    {"code":"JMT05104","title":"Presenters’ Skills for Broadcast Media","credits":13},
+    {"code":"JMT05105","title":"Journalism and Media Profession Ethics","credits":21},
+    {"code":"JMT05106","title":"Emerging Issues Reporting Skills","credits":12},
+    {"code":"GST05201","title":"Risk Taking Skills","credits":6},
+    {"code":"GST05202","title":"Resources Mobilization Skills","credits":11},
+    {"code":"JMT05203","title":"Broadcasting Scheduling","credits":9},
+    {"code":"JMT05204","title":"Radio and TV Advertisement Techniques","credits":8},
+    {"code":"JMT05205","title":"Social Media Marketing Strategies","credits":9},
+    {"code":"JMT05206","title":"Field Practice Training","credits":10}
+  ],
+  "nta6": [
+    {"code":"GST06101","title":"Research Methodology","credits":12},
+    {"code":"GST06102","title":"Research Ethics","credits":6},
+    {"code":"JMT06103","title":"Media Program Production","credits":6},
+    {"code":"JMT06104","title":"TV Programs Production Format Guidelines","credits":7},
+    {"code":"JMT06105","title":"Radio Programs Production Format Guidelines","credits":7},
+    {"code":"JMT06106","title":"Printing Media Software","credits":4},
+    {"code":"GST06107","title":"Problem Solving Skills in Journalism","credits":13},
+    {"code":"GST06201","title":"Counselling Procedures in Journalism","credits":14},
+    {"code":"GST06202","title":"Organizational Behaviour Modification","credits":10},
+    {"code":"GST06203","title":"Organization Workers’ Motivation","credits":13},
+    {"code":"JMT06204","title":"Audio Recording Procedures","credits":8},
+    {"code":"JMT06205","title":"Video Recording Procedures","credits":8},
+    {"code":"JMT06206","title":"Mobile Phone Film Recording Procedures","credits":7},
+    {"code":"JMT06207","title":"Field Practice Training","credits":10}
+  ]
+}

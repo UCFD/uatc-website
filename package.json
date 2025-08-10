@@ -1,0 +1,1 @@
+{"devDependencies":{"browser-sync":"latest","decap-server":"^3.3.1","gulp":"latest","gulp-autoprefixer":"latest","gulp-clean-css":"latest","gulp-concat":"latest","gulp-minify-css":"latest","gulp-notify":"latest","gulp-plumber":"latest","gulp-rename":"latest","gulp-sass":"latest","gulp-sourcemaps":"latest","gulp-uglify":"latest"}}

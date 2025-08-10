@@ -1,0 +1,30 @@
+{
+  "hero": {
+    "title": "About United African Technical College",
+    "subtitle": "A Christian higher education community in Kigamboni empowering Africa through faith, character, and technical excellence.",
+    "pills": [
+      "Kigamboni • Dar es Salaam",
+      "NTA Levels 4–6",
+      "ICT • Business • Media"
+    ]
+  },
+  "mission": "To nurture professionals of character and competence who serve Tanzania and the world with integrity, practical skill, and a Christ-centered worldview.",
+  "vision": "To be a leading technical college in Africa known for excellent teaching, applied research, and community impact.",
+  "values": [
+    { "title": "Faith & Character", "description": "Christ-like leadership and service." },
+    { "title": "Excellence", "description": "High standards in teaching and practice." },
+    { "title": "Innovation", "description": "Creative, real-world problem solving." },
+    { "title": "Community", "description": "Supportive campus life and outreach." }
+  ],
+  "leadership": [
+    { "name": "Mr. Emmanuel Mazengo", "role": "DP ARC", "photo": "img/Emmanuel.jpeg" },
+    { "name": "Prof. Jin Ki Hwang", "role": "Principal", "photo": "img/slider_5.png" },
+    { "name": "Ms. Rehema Miage", "role": "DP FA", "photo": "img/Rehema.png" }
+  ],
+  "visit": {
+    "description": "Kigamboni, Dar es Salaam. Reach us for campus tours, outreach visits, and events.",
+    "email": "info@uatc.ac.tz",
+    "phone": "+255 767 770 566 / +255 614 293 747",
+    "map_embed": "https://www.google.com/maps?q=Kigamboni,%20Dar%20es%20Salaam&output=embed"
+  }
+}

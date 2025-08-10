@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Academics — United African Technical College</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Fonts + Existing Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Open+Sans" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles-merged.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <style>
+      /* small polish for staff filters */
+      .staff-controls { display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin:10px 0 20px; }
+      .staff-controls .form-control { min-width:240px; }
+      .badge-count { background:#ffcc00; color:#000; border-radius:999px; padding:4px 10px; font-weight:700; margin-left:8px; }
+
+      /* Modules UI */
+      .mod-card { background:#fff; border:1px solid #eee; border-radius:10px; padding:16px; margin-top:12px; }
+      .mod-level { margin-top:10px; }
+      .mod-level h5 { margin:6px 0; }
+      .tbl { width:100%; border-collapse:collapse; }
+      .tbl th, .tbl td { border:1px solid #eee; padding:8px; }
+      .tbl th { background:#fafafa; }
+      .muted { color:#666; }
+    </style>
+  </head>
+
+  <body>
+    <div class="probootstrap-page-wrapper">
+      <!-- ===== Top Contact Strip ===== -->
+      <div class="probootstrap-header-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-9 probootstrap-top-quick-contact-info">
+              <span><i class="icon-location2"></i>P.O.BOX 36246, Dar es Salaam, Tanzania</span>
+              <span><i class="icon-phone2"></i>+255 767 770 566 | +255 614 293 747</span>
+              <span><i class="icon-mail"></i>info@uatc.ac.tz</span>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 probootstrap-top-social">
+              <ul>
+                <li><a href="#"><i class="icon-twitter"></i></a></li>
+                <li><a href="#"><i class="icon-facebook2"></i></a></li>
+                <li><a href="https://www.instagram.com/official_uatc/"><i class="icon-instagram2"></i></a></li>
+                <li><a href="#"><i class="icon-youtube"></i></a></li>
+                <li><a href="#" class="probootstrap-search-icon js-probootstrap-search"><i class="icon-search"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== Navbar ===== -->
+      <nav class="navbar navbar-default probootstrap-navbar">
+        <div class="container">
+          <div class="navbar-header">
+            <div class="btn-more js-btn-more visible-xs">
+              <a href="#"><i class="icon-dots-three-vertical"></i></a>
+            </div>
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#navbar-collapse"
+              aria-expanded="false"
+              aria-controls="navbar"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+
+            <!-- Logo -->
+            <img src="img/uatc-logo.png" alt="UATC Logo" style="height:45px;margin-right:10px;margin-top:20px;" />
+          </div>
+
+          <div id="navbar-collapse" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about us.html">About Us</a></li>
+              <li><a href="admission.html">Admissions</a></li>
+              <li class="active"><a href="academics.html">Academics</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a class="btn btn-primary" href="http://localhost:3000/apply" style="margin-left:10px;">Apply Now</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- ===== Hero ===== -->
+      <section class="probootstrap-section probootstrap-section-colored probootstrap-bg" style="background-image:url('img/slider_2.jpg');">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1 text-center section-heading probootstrap-animate">
+              <h1 class="mb0">Academics</h1>
+              <p class="lead">Departments, Staff, and Research at UATC</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Tabs (Departments / Staff / Research) ===== -->
+      <section class="probootstrap-section probootstrap-bg-white probootstrap-border-top">
+        <div class="container">
+          <ul class="nav nav-tabs probootstrap-tabs">
+            <li class="active"><a data-toggle="tab" href="#tab-departments">Departments</a></li>
+            <li><a data-toggle="tab" href="#tab-people">Staff</a></li>
+            <li><a data-toggle="tab" href="#tab-research">Research</a></li>
+          </ul>
+
+          <div class="tab-content" style="margin-top:25px;">
+
+            <!-- Departments (Dynamic modules + static descriptions) -->
+            <div id="tab-departments" class="tab-pane fade in active">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="probootstrap-box">
+                    <h3>Science and Technology</h3>
+                        <p>The department offers competence-based training in ICT and business technology, preparing students for today’s digital economy. With skilled tutors, advanced facilities, and a harmonized learning environment, students gain hands-on experience, critical thinking, and practical skills for direct employment or further academic advancement.</p>
+                     <p><a href="science-technology.html" class="btn btn-default btn-ghost">Explore</a></p>
+                 </div>
+              </div>
+                <div class="col-md-6">
+                  <div class="probootstrap-box">
+                    <h3>Business Management</h3>
+        <p>The Department of Business Management prepares students for impactful careers through innovative, skill-driven programs. Graduates are equipped to excel in creative industries, driving success with practical knowledge, strategic thinking, and real-world experience.</p>
+        <p><a href="business-management.html" class="btn btn-default btn-ghost">Explore</a></p>
+      </div>
+    </div>
+              </div>
+            </div>
+
+            <!-- Staff (Dynamic) -->
+            <div id="tab-people" class="tab-pane fade">
+              <div class="row">
+                <div class="col-md-12 text-center section-heading probootstrap-animate">
+                  <h2>Our Staff <span id="staff-count" class="badge-count" title="Visible staff count">0</span></h2>
+                  <p class="lead">Faculty & academic staff</p>
+                </div>
+              </div>
+
+              <!-- Filters -->
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="staff-controls">
+                    <input id="staff-search" type="text" class="form-control" placeholder="Search staff by name, title, department…" />
+                    <select id="dept-filter" class="form-control">
+                      <option value="">All departments</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row" id="people-container">
+                <div class="col-md-12 text-center" id="people-loading">
+                  <p>Loading profiles…</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Research -->
+            <div id="tab-research" class="tab-pane fade">
+              <div class="row">
+                <div class="col-md-4 probootstrap-animate">
+                  <div class="probootstrap-box">
+                    <h3>AI & Data Systems</h3>
+                    <p>Machine learning, computer vision, and data engineering projects.</p>
+                  </div>
+                </div>
+                <div class="col-md-4 probootstrap-animate">
+                  <div class="probootstrap-box">
+                    <h3>Networks & Cybersecurity</h3>
+                    <p>Secure systems, networking, and cloud infrastructure.</p>
+                  </div>
+                </div>
+                <div class="col-md-4 probootstrap-animate">
+                  <div class="probootstrap-box">
+                    <h3>Tech & Society</h3>
+                    <p>Ethics, entrepreneurship, and responsible innovation.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row" style="margin-top:10px;">
+                <div class="col-md-12">
+                  <a href="#" class="btn btn-primary">Research Highlights</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===== CTA ===== -->
+      <section class="probootstrap-cta">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="probootstrap-animate" data-animate-effect="fadeInRight">Ready to study at UATC?</h2>
+              <a href="http://localhost:3000/apply" target="_blank" role="button" class="btn btn-primary btn-lg btn-ghost probootstrap-animate" data-animate-effect="fadeInLeft">Apply Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Footer ===== -->
+      <footer class="probootstrap-footer probootstrap-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="probootstrap-footer-widget">
+                <h3>About UATC</h3>
+                <p>Christian higher education in Kigamboni, Dar es Salaam—faith, innovation, and technical excellence.</p>
+                <h3>Social</h3>
+                <ul class="probootstrap-footer-social">
+                  <li><a href="#"><i class="icon-twitter"></i></a></li>
+                  <li><a href="#"><i class="icon-facebook"></i></a></li>
+                  <li><a href="#"><i class="icon-instagram2"></i></a></li>
+                  <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                  <li><a href="#"><i class="icon-youtube"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-md-push-1">
+              <div class="probootstrap-footer-widget">
+                <h3>Links</h3>
+                <ul>
+                  <li><a href="https://www.nactvet.go.tz/">NACTVET</a></li>
+                  <li><a href="https://www.heslb.go.tz/?lang=english">HESLB</a></li>
+                  <li><a href="http://localhost:3000/apply">OAS</a></li>
+                  <li><a href="https://www.uaut.ac.tz/">UAUT</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="probootstrap-footer-widget">
+                <h3>Contact</h3>
+                <ul class="probootstrap-contact-info">
+                  <li><i class="icon-location2"></i> <span>P.O.BOX 36246, Dar es Salaam, Tanzania</span></li>
+                  <li><i class="icon-mail"></i><span>info@uatc.ac.tz</span></li>
+                  <li><i class="icon-phone2"></i><span>+255 767 770 566 | +255 614 293 747</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="probootstrapopyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 text-left">
+                <p>&copy; 2025 United African Technical College. All Rights Reserved.</p>
+              </div>
+              <div class="col-md-4 probootstrap-back-to-top">
+                <p><a href="#" class="js-backtotop">Back to top <i class="icon-arrow-long-up"></i></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- ===== Scripts (existing bundle) ===== -->
+    <script src="js/scripts.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <!-- ===== Staff loader (local JSON) ===== -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var container   = document.getElementById("people-container");
+        var loading     = document.getElementById("people-loading");
+        var searchInput = document.getElementById("staff-search");
+        var deptSelect  = document.getElementById("dept-filter");
+        var countBadge  = document.getElementById("staff-count");
+
+        var allStaff = [];
+
+        function removeLoading() {
+          if (loading && loading.parentNode) loading.parentNode.removeChild(loading);
+        }
+
+        function updateCount(n) { if (countBadge) countBadge.textContent = n; }
+
+        function render(list) {
+          removeLoading();
+          container.innerHTML = "";
+
+          if (!Array.isArray(list) || !list.length) {
+            var empty = document.createElement("div");
+            empty.className = "col-md-12 text-center";
+            empty.innerHTML = "<p>No staff profiles available right now.</p>";
+            container.appendChild(empty);
+            updateCount(0);
+            return;
+          }
+
+          list.forEach(function (p) {
+            var col = document.createElement("div");
+            /* No 'probootstrap-animate' to avoid opacity:0 */
+            col.className = "col-md-4 col-sm-6";
+            col.innerHTML =
+              '<div class="probootstrap-teacher text-center" style="opacity:1;visibility:visible;">' +
+              '  <figure class="media" style="opacity:1;visibility:visible;">' +
+              '    <img class="img-responsive" src="' + (p.photoUrl || "img/profile-placeholder.png") + '" alt="' + (p.name || "Profile") + '">' +
+              "  </figure>" +
+              '  <div class="text" style="opacity:1;visibility:visible;">' +
+              "    <h3>" + (p.name || "") + "</h3>" +
+              (p.title ? "    <p><em>" + p.title + "</em></p>" : "") +
+              (p.position || p.department ? "    <p>" + (p.position || p.department) + "</p>" : "") +
+              (p.email ? '    <p><a href=\"mailto:' + p.email + '\">' + p.email + "</a></p>" : "") +
+              "  </div>" +
+              "</div>";
+            container.appendChild(col);
+          });
+
+          updateCount(list.length);
+        }
+
+        function buildDepartments(list) {
+          var set = new Set();
+          list.forEach(function (p) {
+            if (p.department) set.add(p.department.trim());
+            else if (p.position) set.add(p.position.trim());
+          });
+          var sorted = Array.from(set).sort();
+          deptSelect.innerHTML =
+            '<option value="">All departments</option>' +
+            sorted.map(function (d) {
+              return '<option value="' + d.replace(/"/g, '&quot;') + '">' + d + "</option>";
+            }).join("");
+        }
+
+        function normalize(s) { return (s || "").toString().toLowerCase(); }
+
+        function applyFilters() {
+          var q    = normalize(searchInput.value);
+          var dept = deptSelect.value;
+
+          var filtered = allStaff.filter(function (p) {
+            var inDept = !dept || (p.department && p.department === dept) || (p.position && p.position === dept);
+            if (!inDept) return false;
+            if (!q) return true;
+            var hay = [p.name, p.title, p.position, p.department, p.email].map(normalize).join(" ");
+            return hay.indexOf(q) !== -1;
+          });
+
+          render(filtered);
+        }
+
+        function debounce(fn, ms) {
+          var t; return function(){ clearTimeout(t); var a = arguments, s=this; t=setTimeout(function(){ fn.apply(s,a); }, ms); };
+        }
+
+        // Load JSON
+        var peopleUrl = new URL("data/people.json", window.location.href);
+        peopleUrl.searchParams.set("v", Date.now());
+
+        fetch(peopleUrl.toString(), { cache: "no-store" })
+          .then(function (r) {
+            if (!r.ok) throw new Error("HTTP " + r.status);
+            return r.json();
+          })
+          .then(function (data) {
+            if (!Array.isArray(data)) data = [];
+            allStaff = data.map(function (p) {
+              return {
+                name: p.name || "",
+                title: p.title || "",
+                position: p.position || "",
+                department: p.department || "",
+                email: p.email || "",
+                photoUrl: p.photoUrl || "img/profile-placeholder.png"
+              };
+            });
+
+            buildDepartments(allStaff);
+
+            // Reset filters to show EVERYTHING on first load
+            if (searchInput) searchInput.value = "";
+            if (deptSelect)  deptSelect.selectedIndex = 0;
+
+            render(allStaff);
+
+            // Wire up filters
+            searchInput.addEventListener("input", debounce(applyFilters, 200));
+            deptSelect.addEventListener("change", applyFilters);
+          })
+          .catch(function () {
+            // Fallback sample so the section never looks empty during dev
+            allStaff = [
+              { name: "Dr. Jane Doe", title: "HoD", position: "CIT", email: "jane@uatc.ac.tz", photoUrl: "img/profile-placeholder.png", department: "Computing & AI" },
+              { name: "Mr. John Smith", title: "Lecturer", position: "Computer Engineering", email: "john@uatc.ac.tz", photoUrl: "img/profile-placeholder.png", department: "Engineering" }
+            ];
+            buildDepartments(allStaff);
+            if (searchInput) searchInput.value = "";
+            if (deptSelect)  deptSelect.selectedIndex = 0;
+            render(allStaff);
+
+            searchInput.addEventListener("input", debounce(applyFilters, 200));
+            deptSelect.addEventListener("change", applyFilters);
+          });
+      });
+    </script>
+
+    <!-- ===== Modules loader (BA + JMP) ===== -->
+    <script>
+      (function(){
+        function renderLevel(container, title, rows) {
+          var wrap = document.createElement('div');
+          wrap.className = 'mod-level';
+          var h = document.createElement('h5');
+          h.textContent = title;
+          wrap.appendChild(h);
+
+          if (!rows || !rows.length) {
+            var p = document.createElement('p');
+            p.className = 'muted';
+            p.textContent = 'No modules available.';
+            wrap.appendChild(p);
+            container.appendChild(wrap);
+            return;
+          }
+
+          var tbl = document.createElement('table');
+          tbl.className = 'tbl';
+          tbl.innerHTML =
+            '<thead><tr><th style="width:22%;">Code</th><th>Title</th><th style="width:14%;">Credits</th></tr></thead>' +
+            '<tbody>' +
+              rows.map(function(m){
+                return '<tr><td>'+m.code+'</td><td>'+m.title+'</td><td>'+m.credits+'</td></tr>';
+              }).join('') +
+            '</tbody>';
+          wrap.appendChild(tbl);
+          container.appendChild(wrap);
+        }
+
+        function loadModules(jsonPath, targetId, hintId) {
+          var target = document.getElementById(targetId);
+          var hint   = document.getElementById(hintId);
+          if (!target) return;
+
+          var url = new URL(jsonPath, window.location.href);
+          url.searchParams.set('v', Date.now());
+
+          fetch(url.toString(), { cache: 'no-store' })
+            .then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); })
+            .then(function(data){
+              if (hint) hint.remove();
+
+              // Expecting { nta4:[], nta5:[], nta6:[] }
+              renderLevel(target, 'NTA Level 4', data.nta4 || []);
+              renderLevel(target, 'NTA Level 5', data.nta5 || []);
+              renderLevel(target, 'NTA Level 6', data.nta6 || []);
+            })
+            .catch(function(){
+              if (hint) hint.textContent = 'Could not load modules.';
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function(){
+          loadModules('data/ba_modules.json',  'ba-modules',  'ba-hint');
+          loadModules('data/jmp_modules.json', 'jmp-modules', 'jmp-hint');
+        });
+      })();
+    </script>
+  </body>
+</html>

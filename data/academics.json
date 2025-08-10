@@ -1,0 +1,31 @@
+{
+  "hero": {
+    "title": "Academics",
+    "subtitle": "Departments, Staff, and Research at UATC",
+    "buttons": [
+      { "label": "Apply Now", "href": "http://localhost:3000/apply", "variant": "primary" },
+      { "label": "Contact Academics", "href": "contact.html", "variant": "ghost" }
+    ]
+  },
+  "sections": [
+    {
+      "type": "richtext",
+      "title": "Science and Technology",
+      "html": "<p>The department offers competence-based training in ICT and business technology, preparing students for today’s digital economy. With skilled tutors, advanced facilities, and a harmonized learning environment, students gain hands-on experience, critical thinking, and practical skills for direct employment or further academic advancement.</p><p><a class=\"btn btn-default\" href=\"science-technology.html\">Explore</a></p>"
+    },
+    {
+      "type": "richtext",
+      "title": "Business Management",
+      "html": "<p>The Department of Business Management prepares students for impactful careers through innovative, skill-driven programs. Graduates are equipped to excel in creative industries, driving success with practical knowledge, strategic thinking, and real-world experience.</p><p><a class=\"btn btn-default\" href=\"business-management.html\">Explore</a></p>"
+    },
+    {
+      "type": "list",
+      "title": "Research Focus Areas",
+      "items": [
+        { "item": "AI & Data Systems — machine learning, computer vision, data engineering" },
+        { "item": "Networks & Cybersecurity — secure systems, networking, cloud infrastructure" },
+        { "item": "Tech & Society — ethics, entrepreneurship, responsible innovation" }
+      ]
+    }
+  ]
+}

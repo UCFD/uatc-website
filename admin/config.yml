@@ -1,0 +1,361 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "img/uploads"
+public_folder: "/img/uploads"
+logo_url: "/img/uatc-logo.png"
+
+collections:
+  # -------- Staff ----------
+  - name: "staff"
+    label: "Staff"
+    editor: { preview: false }
+    files:
+      - name: "people"
+        label: "People List"
+        file: "data/people.json"
+        fields:
+          - label: "People"
+            name: "people"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Title", name: "title", widget: "string", required: false }
+              - { label: "Position/Dept", name: "position", widget: "string", required: false }
+              - { label: "Department", name: "department", widget: "string", required: false }
+              - { label: "Email", name: "email", widget: "string", required: false }
+              - { label: "Photo", name: "photoUrl", widget: "image", required: false }
+
+  # -------- Fees ----------
+  - name: "fees"
+    label: "Fees"
+    editor: { preview: false }
+    files:
+      - name: "fees_ba"
+        label: "Business Administration Fees"
+        file: "data/fees_ba.json"
+        fields:
+          - label: "Rows"
+            name: "rows"
+            widget: "list"
+            fields:
+              - { label: "Description", name: "desc", widget: "string" }
+              - { label: "NTA4", name: "nta4", widget: "string", required: false }
+              - { label: "NTA5", name: "nta5", widget: "string", required: false }
+              - { label: "NTA6", name: "nta6", widget: "string", required: false }
+          - { label: "Total NTA4", name: "total4", widget: "string" }
+          - { label: "Total NTA5", name: "total5", widget: "string" }
+          - { label: "Total NTA6", name: "total6", widget: "string" }
+
+      - name: "fees_jmp"
+        label: "JMP Fees"
+        file: "data/fees_jmp.json"
+        fields:
+          - label: "Rows"
+            name: "rows"
+            widget: "list"
+            fields:
+              - { label: "Description", name: "desc", widget: "string" }
+              - { label: "NTA4", name: "nta4", widget: "string", required: false }
+              - { label: "NTA5", name: "nta5", widget: "string", required: false }
+              - { label: "NTA6", name: "nta6", widget: "string", required: false }
+          - { label: "Total NTA4", name: "total4", widget: "string" }
+          - { label: "Total NTA5", name: "total5", widget: "string" }
+          - { label: "Total NTA6", name: "total6", widget: "string" }
+
+  # -------- Modules ----------
+  - name: "modules"
+    label: "Modules"
+    editor: { preview: false }
+    files:
+      - name: "ba_modules"
+        label: "BA Modules"
+        file: "data/ba_modules.json"
+        fields:
+          - label: "NTA 4"
+            name: "nta4"
+            widget: "list"
+            fields:
+              - { label: "Code", name: "code", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Credits", name: "credits", widget: "number" }
+          - label: "NTA 5"
+            name: "nta5"
+            widget: "list"
+            fields:
+              - { label: "Code", name: "code", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Credits", name: "credits", widget: "number" }
+          - label: "NTA 6"
+            name: "nta6"
+            widget: "list"
+            fields:
+              - { label: "Code", name: "code", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Credits", name: "credits", widget: "number" }
+
+      - name: "jmp_modules"
+        label: "JMP Modules"
+        file: "data/jmp_modules.json"
+        fields:
+          - label: "NTA 4"
+            name: "nta4"
+            widget: "list"
+            fields:
+              - { label: "Code", name: "code", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Credits", name: "credits", widget: "number" }
+          - label: "NTA 5"
+            name: "nta5"
+            widget: "list"
+            fields:
+              - { label: "Code", name: "code", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Credits", name: "credits", widget: "number" }
+          - label: "NTA 6"
+            name: "nta6"
+            widget: "list"
+            fields:
+              - { label: "Code", name: "code", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Credits", name: "credits", widget: "number" }
+
+  # -------- Pages ----------
+  - name: "pages"
+    label: "Pages"
+    editor: { preview: false }
+    files:
+      - name: "home"
+        label: "Home"
+        file: "data/home.json"
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "text", required: false }
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Link", name: "href", widget: "string" }
+                  - { label: "Variant", name: "variant", widget: "select", options: [primary, ghost, default], default: "primary" }
+          - label: "Sections"
+            name: "sections"
+            widget: "list"
+            types:
+              - label: "Rich Text"
+                name: "richtext"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string", required: false }
+                  - { label: "HTML", name: "html", widget: "text" }
+              - label: "List"
+                name: "list"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string", required: false }
+                  - label: "Items"
+                    name: "items"
+                    widget: "list"
+                    field: { label: "Item", name: "item", widget: "string" }
+
+      - name: "about"
+        label: "About"
+        file: "data/about.json"
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "text", required: false }
+              - label: "Pills"
+                name: "pills"
+                widget: "list"
+                field: { label: "Pill", name: "pill", widget: "string" }
+          - { label: "Mission", name: "mission", widget: "text" }
+          - { label: "Vision", name: "vision", widget: "text" }
+          - label: "Values"
+            name: "values"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "string" }
+          - label: "Leadership"
+            name: "leadership"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Role", name: "role", widget: "string" }
+              - { label: "Photo", name: "photo", widget: "image" }
+          - label: "Visit Info"
+            name: "visit"
+            widget: "object"
+            fields:
+              - { label: "Description", name: "description", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Phone", name: "phone", widget: "string" }
+              - { label: "Map Embed URL", name: "map_embed", widget: "string" }
+
+      # Admissions (with pills under hero)
+      - name: "admission"
+        label: "Admission"
+        file: "data/admission.json"
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "text", required: false }
+              - label: "Pills"
+                name: "pills"
+                widget: "list"
+                field: { label: "Pill", name: "pill", widget: "string" }
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Link", name: "href", widget: "string" }
+                  - { label: "Variant", name: "variant", widget: "select", options: [primary, ghost, default], default: "primary" }
+          - label: "Sections"
+            name: "sections"
+            widget: "list"
+            types:
+              - label: "Rich Text"
+                name: "richtext"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string", required: false }
+                  - { label: "HTML", name: "html", widget: "text" }
+              - label: "List"
+                name: "list"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string", required: false }
+                  - label: "Items"
+                    name: "items"
+                    widget: "list"
+                    field: { label: "Item", name: "item", widget: "string" }
+
+      - name: "academics"
+        label: "Academics"
+        file: "data/academics.json"
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "text", required: false }
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Link", name: "href", widget: "string" }
+                  - { label: "Variant", name: "variant", widget: "select", options: [primary, ghost, default], default: "primary" }
+          - label: "Sections"
+            name: "sections"
+            widget: "list"
+            types:
+              - label: "Rich Text"
+                name: "richtext"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string", required: false }
+                  - { label: "HTML", name: "html", widget: "text" }
+              - label: "List"
+                name: "list"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string", required: false }
+                  - label: "Items"
+                    name: "items"
+                    widget: "list"
+                    field: { label: "Item", name: "item", widget: "string" }
+
+      # Contact (enhanced schema)
+      - name: "contact"
+        label: "Contact"
+        file: "data/contact.json"
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "text", required: false }
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Link", name: "href", widget: "string" }
+                  - { label: "Variant", name: "variant", widget: "select", options: [primary, ghost, default], default: "primary" }
+
+          - label: "Quick Tiles"
+            name: "tiles"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - label: "Details"
+                name: "details"
+                widget: "list"
+                field: { label: "Line", name: "line", widget: "string" }
+              - label: "Buttons"
+                name: "buttons"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Link", name: "href", widget: "string" }
+                  - { label: "Variant", name: "variant", widget: "select", options: [primary, ghost, default], default: "ghost" }
+
+          - label: "Visit / Contact Info"
+            name: "visit"
+            widget: "object"
+            fields:
+              - { label: "Address", name: "address", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+              - label: "Phone"
+                name: "phone"
+                widget: "list"
+                field: { label: "Number", name: "number", widget: "string" }
+              - { label: "Hours", name: "hours", widget: "string", required: false }
+              - { label: "Map Embed URL", name: "map_embed", widget: "string" }
+
+          - label: "FAQ"
+            name: "faq"
+            widget: "list"
+            fields:
+              - { label: "Question", name: "question", widget: "string" }
+              - { label: "Answer", name: "answer", widget: "text" }
+              - label: "Button"
+                name: "button"
+                widget: "object"
+                required: false
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Link", name: "href", widget: "string" }
+
+          - label: "CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - label: "Button"
+                name: "button"
+                widget: "object"
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Link", name: "href", widget: "string" }

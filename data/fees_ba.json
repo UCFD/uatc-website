@@ -1,0 +1,55 @@
+{
+  "rows": [
+    {
+      "desc": "Tuition Fees",
+      "nta4": "900,000",
+      "nta5": "900,000",
+      "nta6": "900,000"
+    },
+    {
+      "desc": "Registration Charges",
+      "nta4": "20,000",
+      "nta5": "20,000",
+      "nta6": ""
+    },
+    {
+      "desc": "NHIF (annual)",
+      "nta4": "50,400",
+      "nta5": "50,400",
+      "nta6": "50,400"
+    },
+    {
+      "desc": "NACTVET Quality Assurance Fee",
+      "nta4": "15,000",
+      "nta5": "15,000",
+      "nta6": "15,000"
+    },
+    {
+      "desc": "Identity Card",
+      "nta4": "10,000",
+      "nta5": "10,000",
+      "nta6": "10,000"
+    },
+    {
+      "desc": "Exams Charges",
+      "nta4": "30,000",
+      "nta5": "30,000",
+      "nta6": "30,000"
+    },
+    {
+      "desc": "UATC Students Organization Fees",
+      "nta4": "10,000",
+      "nta5": "10,000",
+      "nta6": "10,000"
+    },
+    {
+      "desc": "Graduation / Certificate Collection",
+      "nta4": "",
+      "nta5": "",
+      "nta6": "30,000"
+    }
+  ],
+  "total4": "1,065,400",
+  "total5": "1,065,400",
+  "total6": "1,015,400"
+}

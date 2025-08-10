@@ -1,0 +1,26 @@
+{
+  "hero": {
+    "title": "WELCOME",
+    "subtitle": "United African Technical College (UATC) — Christian higher education in Kigamboni, Dar es Salaam.",
+    "buttons": [
+      { "label": "Apply Now", "href": "http://localhost:3000/apply", "variant": "primary" },
+      { "label": "Contact Us", "href": "contact.html", "variant": "ghost" }
+    ]
+  },
+  "sections": [
+    {
+      "type": "richtext",
+      "title": "Principal Note",
+      "html": "<p>Greetings,<br>United African Technical College (UATC) is dedicated to professional training and to forming outstanding leaders for Tanzania and the world.</p><p><a class=\"btn btn-primary\" href=\"Principal Note.html\">Learn More</a></p>"
+    },
+    {
+      "type": "list",
+      "title": "Why Study at UATC",
+      "items": [
+        { "item": "Practical, industry-aligned training" },
+        { "item": "Ethics and leadership focus" },
+        { "item": "Supportive Christian learning environment" }
+      ]
+    }
+  ]
+}

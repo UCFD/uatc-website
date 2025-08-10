@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Contact — United African Technical College</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Existing stack -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Open+Sans" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles-merged.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+
+  <style>
+    /* Small, neat Apply button in navbar */
+    .navbar .btn-primary { padding:6px 12px; font-size:14px; line-height:1.2; }
+
+    /* Hero */
+    .hero-ct { background:url('img/slider_3.jpg') center/cover no-repeat; position:relative; }
+    .hero-ct .overlay { background:rgba(0,0,0,.55); padding:80px 0 70px; color:#fff; }
+
+    /* Cards */
+    .card-min { background:#fff; border:1px solid #eee; border-radius:12px; padding:22px; height:100%; }
+    .soft { color:#666; }
+    .list-clean { padding-left:18px; }
+    .list-clean li { margin-bottom:6px; }
+
+    /* Quick tiles */
+    .tile {
+      background:#fff; border:1px solid #eee; border-radius:12px;
+      padding:18px; height:100%; transition:box-shadow .2s, transform .2s;
+    }
+    .tile:hover { box-shadow:0 10px 24px rgba(0,0,0,.07); transform:translateY(-1px); }
+    .tile h4 { margin-top:0; }
+
+    /* Map */
+    .map-wrap { border-radius:12px; overflow:hidden; border:1px solid #eee; }
+
+    /* Form */
+    .help-block { font-size:12px; color:#888; }
+    .status { display:none; margin-top:10px; }
+    .status.ok { color:#1a7f37; }
+    .status.err { color:#b42318; }
+    .btn-quiet { padding:8px 16px; }
+
+    /* Success modal */
+    .modal-overlay {
+      position:fixed; inset:0; background:rgba(0,0,0,.5); display:none; align-items:center; justify-content:center; z-index:9999;
+    }
+    .modal-card {
+      background:#fff; border-radius:14px; padding:24px; max-width:460px; width:90%; text-align:center; border:1px solid #eee;
+    }
+    .modal-card h4 { margin-top:0; }
+    .modal-card .btn { margin-top:10px; }
+
+    /* FAQ accordion (leans on bootstrap collapse) */
+    .faq h4 { margin:0; }
+    .faq .panel { border:none; box-shadow:none; border-bottom:1px solid #eee; border-radius:0; }
+    .faq .panel-body { padding-left:0; }
+  </style>
+</head>
+<body>
+<div class="probootstrap-page-wrapper">
+
+  <!-- Top strip -->
+  <div class="probootstrap-header-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 col-md-9 col-sm-9 probootstrap-top-quick-contact-info">
+          <span><i class="icon-location2"></i>P.O.BOX 36246, Dar es Salaam, Tanzania</span>
+          <span><i class="icon-phone2"></i>+255 767 770 566 | +255 614 293 747</span>
+          <span><i class="icon-mail"></i>info@uatc.ac.tz</span>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 probootstrap-top-social">
+          <ul>
+            <li><a href="#"><i class="icon-twitter"></i></a></li>
+            <li><a href="#"><i class="icon-facebook2"></i></a></li>
+            <li><a href="https://www.instagram.com/official_uatc/"><i class="icon-instagram2"></i></a></li>
+            <li><a href="#"><i class="icon-youtube"></i></a></li>
+            <li><a href="#" class="probootstrap-search-icon js-probootstrap-search"><i class="icon-search"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-default probootstrap-navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <div class="btn-more js-btn-more visible-xs"><a href="#"><i class="icon-dots-three-vertical"></i></a></div>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="sr-only">Toggle</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+        </button>
+        <img src="img/uatc-logo.png" alt="UATC Logo" style="height:45px;margin-right:10px;margin-top:20px;">
+      </div>
+      <div id="navbar-collapse" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about us.html">About Us</a></li>
+          <li><a href="admission.html">Admissions</a></li>
+          <li><a href="academics.html">Academics</a></li>
+          <li class="active"><a href="contact.html">Contact</a></li>
+          <li><a class="btn btn-primary" target="_blank" href="http://localhost:3000/apply">Apply Now</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero (CMS-wired: title, subtitle, buttons) -->
+  <section class="probootstrap-section hero-ct">
+    <div class="overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1 text-center section-heading probootstrap-animate">
+            <h1 id="contact-hero-title" class="mb0">Contact UATC</h1>
+            <p id="contact-hero-subtitle" class="lead">We’re here to help — Admissions, Programs, ICT Support & more.</p>
+            <div id="contact-hero-buttons" style="margin-top:12px;">
+              <a class="btn btn-primary btn-quiet" href="#form">Send a Message</a>
+              <a class="btn btn-default btn-ghost btn-quiet" href="https://wa.me/255767770566" target="_blank">WhatsApp</a>
+              <a class="btn btn-default btn-ghost btn-quiet" href="tel:+255767770566">Call Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick tiles -->
+  <section class="probootstrap-section probootstrap-bg-white probootstrap-border-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 probootstrap-animate">
+          <div class="tile">
+            <h4>General Enquiries</h4>
+            <p class="soft">info@uatc.ac.tz</p>
+            <p class="soft">Mon–Fri 8:00–17:00 (EAT)</p>
+          </div>
+        </div>
+        <div class="col-sm-4 probootstrap-animate">
+          <div class="tile">
+            <h4>Admissions</h4>
+            <p class="soft"><a href="mailto:admissions@uatc.ac.tz">admission@uatc.ac.tz</a></p>
+            <p><a class="btn btn-default btn-ghost btn-quiet" href="http://localhost:3000/apply" target="_blank">Apply via OAS</a></p>
+          </div>
+        </div>
+        <div class="col-sm-4 probootstrap-animate">
+          <div class="tile">
+            <h4>ICT / OAS Support</h4>
+            <p class="soft"><a href="mailto:ict@uatc.ac.tz">ict@uatc.ac.tz</a></p>
+            <p class="soft">Helpdesk: +255 614 293 747</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info + Map -->
+  <section class="probootstrap-section probootstrap-section-colored">
+    <div class="container">
+      <div class="row"> 
+        <div class="col-md-5 probootstrap-animate">
+          <div class="card-min">
+            <h3>Visit / Write / Call</h3>
+            <ul class="list-clean">
+              <li><strong>Address:</strong> P.O.BOX 36246, Kigamboni, Dar es Salaam, Tanzania</li>
+              <li><strong>Email:</strong> <a href="mailto:info@uatc.ac.tz">info@uatc.ac.tz</a></li>
+              <li><strong>Phone:</strong> <a href="tel:+255767770566">+255 767 770 566</a> | <a href="tel:+255614293747">+255 614 293 747</a></li>
+              <li><strong>Hours:</strong> Mon–Fri 8:00–17:00 (EAT)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-7 probootstrap-animate">
+          <div class="map-wrap">
+            <iframe
+              src="https://www.google.com/maps?q=Kigamboni,+Dar+es+Salaam&output=embed"
+              width="100%" height="360" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <p class="help-block soft" style="margin-top:6px;"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact form -->
+  <section class="probootstrap-section" id="form">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 probootstrap-animate">
+          <div class="card-min">
+            <h3>Send us a message</h3>
+
+            <!-- TODO: replace YOUR_FORM_ID with your Formspree ID; set inbox to exams@uatc.ac.tz (or preferred). -->
+            <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+              <input type="hidden" name="_subject" value="Website Contact — UATC" />
+              <!-- honeypot -->
+              <input type="text" name="company" tabindex="-1" autocomplete="off" style="position:absolute; left:-5000px; width:1px; height:1px; overflow:hidden;" />
+
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input id="name" name="name" class="form-control" required />
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input id="email" name="email" type="email" class="form-control" required />
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input id="phone" name="phone" class="form-control" />
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="topic">Topic *</label>
+                    <select id="topic" name="topic" class="form-control" required>
+                      <option value="">Choose…</option>
+                      <option>Admissions</option>
+                      <option>Programs</option>
+                      <option>ICT/OAS Support</option>
+                      <option>Exams & Records</option>
+                      <option>Media/Other</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-quiet">Send Message</button>
+              <div id="formStatus" class="status"></div>
+
+              <p class="help-block soft" style="margin-top:6px;">
+                Your message will be delivered securely to our team. We usually respond within 1–2 business days.
+              </p>
+            </form>
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="col-md-5 probootstrap-animate">
+          <div class="card-min faq">
+            <h3>Frequently Asked</h3>
+            <div class="panel-group" id="faq-acc">
+              <div class="panel">
+                <h4>
+                  <a data-toggle="collapse" data-parent="#faq-acc" href="#q1">How do I apply?</a>
+                </h4>
+                <div id="q1" class="panel-collapse collapse in">
+                  <div class="panel-body soft">
+                    Use our Online Application System (OAS). You can track your application there too.
+                    <div style="margin-top:8px;">
+                      <a class="btn btn-default btn-ghost btn-quiet" href="http://localhost:3000/apply" target="_blank">Open OAS</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel">
+                <h4>
+                  <a data-toggle="collapse" data-parent="#faq-acc" href="#q2" class="collapsed">Where can I find fees & payment details?</a>
+                </h4>
+                <div id="q2" class="panel-collapse collapse">
+                  <div class="panel-body soft">
+                    Fees for Certificate & Diploma programs are listed on the Admissions page. Payments can be made per the schedule indicated there.
+                    <div style="margin-top:8px;">
+                      <a class="btn btn-default btn-ghost btn-quiet" href="admission.html">View Admissions</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel">
+                <h4>
+                  <a data-toggle="collapse" data-parent="#faq-acc" href="#q3" class="collapsed">Need help with OAS or ICT?</a>
+                </h4>
+                <div id="q3" class="panel-collapse collapse">
+                  <div class="panel-body soft">
+                    Email <a href="mailto:ict@uatc.ac.tz">ict@uatc.ac.tz</a> or WhatsApp us. We’ll guide you step-by-step.
+                    <div style="margin-top:8px;">
+                      <a class="btn btn-default btn-ghost btn-quiet" href="https://wa.me/255767770566" target="_blank">Open WhatsApp</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /panel-group -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="probootstrap-cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="probootstrap-animate" data-animate-effect="fadeInRight">Prefer WhatsApp?</h2>
+          <a href="https://wa.me/255767770566" target="_blank" role="button" class="btn btn-primary btn-lg btn-ghost probootstrap-animate btn-quiet" data-animate-effect="fadeInLeft">Chat on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="probootstrap-footer probootstrap-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="probootstrap-footer-widget">
+            <h3>About UATC</h3>
+            <p>Christian higher education in Kigamboni, Dar es Salaam—faith, innovation, and technical excellence.</p>
+            <h3>Social</h3>
+            <ul class="probootstrap-footer-social">
+              <li><a href="#"><i class="icon-twitter"></i></a></li>
+              <li><a href="#"><i class="icon-facebook"></i></a></li>
+              <li><a href="#"><i class="icon-instagram2"></i></a></li>
+              <li><a href="#"><i class="icon-linkedin"></i></a></li>
+              <li><a href="#"><i class="icon-youtube"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-md-push-1">
+          <div class="probootstrap-footer-widget">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="https://www.nactvet.go.tz/" target="_blank" rel="noopener">NACTVET</a></li>
+              <li><a href="https://www.heslb.go.tz/?lang=english" target="_blank" rel="noopener">HESLB</a></li>
+              <li><a href="http://localhost:3000/apply" target="_blank" rel="noopener">OAS</a></li>
+              <li><a href="https://www.uaut.ac.tz/" target="_blank" rel="noopener">UAUT</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="probootstrap-footer-widget">
+            <h3>Contact</h3>
+            <ul class="probootstrap-contact-info">
+              <li><i class="icon-location2"></i> <span>P.O.BOX 36246, Dar es Salaam, Tanzania</span></li>
+              <li><i class="icon-mail"></i><span>info@uatc.ac.tz</span></li>
+              <li><i class="icon-phone2"></i><span>+255 767 770 566 | +255 614 293 747</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="probootstrapopyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 text-left">
+            <p>&copy; 2025 United African Technical College. All Rights Reserved.</p>
+          </div>
+          <div class="col-md-4 probootstrap-back-to-top">
+            <p><a href="#" class="js-backtotop">Back to top <i class="icon-arrow-long-up"></i></a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<!-- Success Modal -->
+<div class="modal-overlay" id="successModal">
+  <div class="modal-card">
+    <h4>Your message was sent successfully</h4>
+    <p class="soft">Thank you for contacting UATC. We’ll get back to you soon.</p>
+    <button class="btn btn-primary btn-quiet" onclick="document.getElementById('successModal').style.display='none'">Close</button>
+  </div>
+</div>
+
+<!-- JS bundle -->
+<script src="js/scripts.min.js"></script>
+<script src="js/main.min.js"></script>
+<script src="js/custom.js"></script>
+
+<script>
+  // Handle submit via fetch; show success modal; no mailto
+  (function(){
+    var form = document.getElementById('contactForm');
+    var status = document.getElementById('formStatus');
+    var modal = document.getElementById('successModal');
+
+    function showStatus(msg, ok){
+      status.textContent = msg;
+      status.className = 'status ' + (ok ? 'ok' : 'err');
+      status.style.display = 'block';
+    }
+
+    form.addEventListener('submit', async function(e){
+      e.preventDefault();
+      status.style.display = 'none';
+
+      var name = form.name.value.trim();
+      var email = form.email.value.trim();
+      var topic = form.topic.value.trim();
+      var message = form.message.value.trim();
+      if (!name || !email || !topic || !message) {
+        showStatus('Please fill in all required fields.', false);
+        return;
+      }
+      if (form.company.value) return; // honeypot
+
+      try {
+        const res = await fetch(form.action, {
+          method: form.method,
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          form.reset();
+          modal.style.display = 'flex';
+        } else {
+          showStatus('Error sending message. Please try again.', false);
+        }
+      } catch(err) {
+        showStatus('Network error. Please try again.', false);
+      }
+    });
+  })();
+
+  // Light CMS hook: read data/contact.json for hero content (title, subtitle, buttons)
+  (function(){
+    var titleEl = document.getElementById('contact-hero-title');
+    var subEl   = document.getElementById('contact-hero-subtitle');
+    var btnWrap = document.getElementById('contact-hero-buttons');
+
+    try {
+      var url = new URL('data/contact.json', window.location.href);
+      url.searchParams.set('v', Date.now());
+
+      fetch(url.toString(), { cache: 'no-store' })
+        .then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); })
+        .then(function(data){
+          if (!data || !data.hero) return;
+
+          if (data.hero.title && titleEl)   titleEl.textContent = data.hero.title;
+          if (subEl) subEl.textContent = data.hero.subtitle || '';
+
+          if (btnWrap && Array.isArray(data.hero.buttons) && data.hero.buttons.length) {
+            btnWrap.innerHTML = data.hero.buttons.map(function(b){
+              var cls = 'btn btn-quiet ' + (b.variant === 'ghost' ? 'btn-default btn-ghost' : 'btn-primary');
+              var href = b.href || '#';
+              var label = b.label || 'Learn More';
+              return '<a class="'+cls+'" href="'+href+'">'+label+'</a>';
+            }).join(' ');
+          }
+        })
+        .catch(function(){ /* silent */ });
+    } catch(e) { /* silent */ }
+  })();
+</script>
+</body>
+</html>

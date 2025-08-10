@@ -1,0 +1,44 @@
+{
+  "nta4": [
+    {"code":"GST04101","title":"Basic Business Communication","credits":8},
+    {"code":"GST04103","title":"Principles of Book Keeping","credits":9},
+    {"code":"GST04104","title":"Elements of Business Mathematics","credits":8},
+    {"code":"GST04105","title":"Basic Computer Applications","credits":9},
+    {"code":"GST04109","title":"Elements of Economics","credits":8},
+    {"code":"GST04212","title":"Field Practical Training","credits":10},
+    {"code":"BAT04207","title":"Fundamentals of Marketing","credits":12},
+    {"code":"BAT04102","title":"Elements of Entrepreneurship","credits":10},
+    {"code":"BAT04208","title":"Basic Procurement and Supply","credits":12},
+    {"code":"BAT04210","title":"Fundamentals of Salesmanship","credits":12},
+    {"code":"BAT04106","title":"Elements of Commerce","credits":10},
+    {"code":"BAT04211","title":"Basic Office Practice and Records Management","credits":12}
+  ],
+  "nta5": [
+    {"code":"GST05101","title":"Business Communication","credits":9},
+    {"code":"GST05103","title":"Principles of Accounting","credits":9},
+    {"code":"GST05104","title":"Business Mathematics and Statistics","credits":9},
+    {"code":"GST05105","title":"Information and Communication Technology","credits":9},
+    {"code":"GST05109","title":"Principles of Economics","credits":8},
+    {"code":"GST05212","title":"Supervisory Skills for Business","credits":8},
+    {"code":"GST05102","title":"Small Business Management","credits":11},
+    {"code":"GST05106","title":"Principles of Management","credits":12},
+    {"code":"GST05207","title":"Principles of Marketing","credits":12},
+    {"code":"GST05208","title":"Principles of Procurement and Supply","credits":11},
+    {"code":"GST05210","title":"Sales Management Principles","credits":12},
+    {"code":"GST05211","title":"Office Practice and Records","credits":10}
+  ],
+  "nta6": [
+    {"code":"GST06104","title":"Basic Quantitative Methods","credits":8},
+    {"code":"GST06105","title":"Business Information Systems","credits":8},
+    {"code":"GST06207","title":"Principles of Human Resources Management","credits":8},
+    {"code":"GST06209","title":"Business Law","credits":8},
+    {"code":"GST06211","title":"Research Methodology","credits":8},
+    {"code":"GST06212","title":"Field Practical Training","credits":10},
+    {"code":"BAT06101","title":"Principles of Business Management","credits":12},
+    {"code":"BAT06102","title":"Entrepreneurship Development","credits":10},
+    {"code":"BAT06103","title":"Principles of Financial Management","credits":12},
+    {"code":"BAT06106","title":"Principles of Marketing Management","credits":12},
+    {"code":"BAT06208","title":"Procurement and Supply Management","credits":12},
+    {"code":"BAT06210","title":"Principles of Production Management","credits":12}
+  ]
+}

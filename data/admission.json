@@ -1,0 +1,24 @@
+{
+  "hero": {
+    "title": "Admissions (Certificate & Diploma)",
+    "subtitle": "Clear steps, simple requirements, and affordable paths.",
+    "pills": [
+      "September 2025 Intake",
+      "NTA Levels 4–6",
+      "Kigamboni, Dar es Salaam"
+    ],
+    "buttons": [
+      {
+        "label": "Start Application",
+        "href": "http://localhost:3000/apply",
+        "variant": "primary"
+      },
+      {
+        "label": "Prospectus (PDF)",
+        "href": "docs/uatc-prospectus.pdf",
+        "variant": "ghost"
+      }
+    ]
+  },
+  "sections": []
+}

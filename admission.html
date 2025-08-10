@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Admissions — United African Technical College</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Your existing stack -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Open+Sans" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles-merged.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+
+  <style>
+    .hero-adm { background:url('img/slider_1.jpg') center/cover no-repeat; position:relative; }
+    .hero-adm .overlay { background:rgba(87, 86, 86, 0.45); padding:80px 0 50px; }
+    .pill { display:inline-block; padding:4px 10px; border-radius:999px; background:#fff2b3; color:#222; font-weight:700; font-size:12px; margin:2px 4px; }
+    .btn-quiet { padding:6px 14px; font-size:14px; line-height:1.2; }
+    .navbar .btn-primary { padding:6px 12px; font-size:14px; line-height:1.2; }
+
+    .card-min { background:#fff; border:1px solid #eee; border-radius:10px; padding:20px; height:100%; }
+    .soft { color:#666; }
+    .list-clean { padding-left:18px; }
+    .list-clean li { margin-bottom:6px; }
+
+    .step { position:relative; padding-left:26px; margin-bottom:12px; }
+    .step:before { content:""; position:absolute; left:6px; top:4px; width:10px; height:10px; border-radius:50%; background:#ffcc00; }
+    .step:after { content:""; position:absolute; left:10px; top:18px; bottom:-8px; width:2px; background:#ffe48a; }
+    .step:last-child:after { display:none; }
+
+    .tbl { width:100%; border-collapse:collapse; }
+    .tbl th, .tbl td { border:1px solid #eee; padding:10px; }
+    .tbl th { background:#fafafa; }
+
+    .faq-item { border-top:1px solid #eee; }
+    .faq-q { display:flex; justify-content:space-between; align-items:center; cursor:pointer; padding:12px 0; }
+    .faq-a { display:none; padding:0 0 14px; color:#555; }
+
+    .anchor-nav { display:flex; gap:16px; flex-wrap:wrap; margin-top:10px; }
+    .anchor-nav a { color:#fff; text-decoration:underline; }
+  </style>
+</head>
+<body>
+<div class="probootstrap-page-wrapper">
+
+  <!-- Top strip -->
+  <div class="probootstrap-header-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 col-md-9 col-sm-9 probootstrap-top-quick-contact-info">
+          <span><i class="icon-location2"></i>P.O.BOX 36246, Dar es Salaam, Tanzania</span>
+          <span><i class="icon-phone2"></i>+255 767 770 566 | +255 614 293 747</span>
+          <span><i class="icon-mail"></i>info@uatc.ac.tz</span>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 probootstrap-top-social">
+          <ul>
+            <li><a href="#"><i class="icon-twitter"></i></a></li>
+            <li><a href="#"><i class="icon-facebook2"></i></a></li>
+            <li><a href="https://www.instagram.com/official_uatc/"><i class="icon-instagram2"></i></a></li>
+            <li><a href="#"><i class="icon-youtube"></i></a></li>
+            <li><a href="#" class="probootstrap-search-icon js-probootstrap-search"><i class="icon-search"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-default probootstrap-navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <div class="btn-more js-btn-more visible-xs"><a href="#"><i class="icon-dots-three-vertical"></i></a></div>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="sr-only">Toggle</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+        </button>
+        <img src="img/uatc-logo.png" alt="UATC Logo" style="height:45px;margin-right:10px;margin-top:20px;">
+      </div>
+      <div id="navbar-collapse" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about us.html">About Us</a></li>
+          <li class="active"><a href="admission.html">Admissions</a></li>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a id="adm-apply-nav" class="btn btn-primary" target="_blank" href="http://localhost:3000/apply">Apply Now</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="probootstrap-section hero-adm" id="top">
+    <div class="overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1 text-center section-heading probootstrap-animate" style="color:#fff;">
+            <h1 id="adm-hero-title" class="mb0">Admissions (Certificate & Diploma)</h1>
+            <p id="adm-hero-subtitle" class="lead">Clear steps, simple requirements, and affordable paths.</p>
+            <div id="adm-hero-pills">
+              <span class="pill">September 2025 Intake</span>
+              <span class="pill">NTA Levels 4–6</span>
+              <span class="pill">Kigamboni, Dar es Salaam</span>
+            </div>
+            <div id="adm-hero-buttons" style="margin-top:16px;">
+              <a class="btn btn-primary btn-quiet" target="_blank" href="http://localhost:3000/apply">Start Application</a>
+              <a class="btn btn-default btn-ghost btn-quiet" href="docs/uatc-prospectus.pdf" target="_blank">Prospectus (PDF)</a>
+            </div>
+            <div class="anchor-nav" style="justify-content:center;margin-top:18px;">
+              <a href="#steps">How to Apply</a>
+              <a href="#requirements">Entry Requirements</a>
+              <a href="#tuition">Tuition & Fees</a>
+              <a href="#faq">FAQs</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- How to apply -->
+  <section class="probootstrap-section probootstrap-bg-white probootstrap-border-top" id="steps">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 probootstrap-animate">
+          <div class="card-min">
+            <h3>How to Apply (Certificate & Diploma)</h3>
+            <div class="step"><strong>1.</strong> Fill in the Form</div>
+            <div class="step"><strong>2.</strong> Select program & intake (NTA 4–6)</div>
+            <div class="step"><strong>3.</strong> Upload documents</div>
+            <div class="step"><strong>4.</strong> Submit your Application</div>
+            <p style="margin-top:8px;">
+              <a id="adm-apply-btn" class="btn btn-primary btn-quiet" target="_blank" href="http://localhost:3000/apply">Apply on OAS</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 probootstrap-animate" id="requirements">
+          <div class="card-min">
+            <h3>Entry Requirements</h3>
+            <ul class="list-clean">
+              <li><strong>NTA Level 4 (Certificate):</strong> CSEE with ≥ 4 passes.</li>
+              <li><strong>NTA Level 5 (Diploma Year 1):</strong> NTA 4 (related) or CSEE + bridging (where applicable).</li>
+              <li><strong>NTA Level 6 (Diploma Year 2):</strong> NTA 5 (related).</li>
+            </ul>
+            <p class="soft">Specific programs may set additional criteria. Contact Admissions for clarifications.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tuition & Fees -->
+  <section class="probootstrap-section probootstrap-section-colored" id="tuition">
+    <div class="container">
+      <h3 class="text-center" style="margin-bottom:16px;">Tuition & Fees (TZS) — Certificate & Diploma</h3>
+
+      <!-- CIT & BIT -->
+      <div class="row" style="margin-bottom:18px;">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="card-min">
+            <h4>Certificate & Diploma in Computing Information Technology (CIT) and Business Information Technology (BIT)</h4>
+            <div class="table-responsive">
+              <table class="tbl">
+                <thead>
+                  <tr><th>Fee Description</th><th>NTA Level 4</th><th>NTA Level 5</th><th>NTA Level 6</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Tuition Fees</td><td>1,100,000</td><td>1,100,000</td><td>1,100,000</td></tr>
+                  <tr><td>Registration Charges</td><td>20,000</td><td>20,000</td><td></td></tr>
+                  <tr><td>NHIF Membership (annually)</td><td>50,400</td><td>50,400</td><td>50,400</td></tr>
+                  <tr><td>NACTVET Quality Assurance Fee</td><td>15,000</td><td>15,000</td><td>15,000</td></tr>
+                  <tr><td>Identity Card</td><td>10,000</td><td>10,000</td><td>10,000</td></tr>
+                  <tr><td>Exams Charges</td><td>50,000</td><td>50,000</td><td>50,000</td></tr>
+                  <tr><td>Practical Training</td><td>50,000</td><td>50,000</td><td>50,000</td></tr>
+                  <tr><td>UATC Students Organization Fees</td><td>10,000</td><td>10,000</td><td>10,000</td></tr>
+                  <tr><td>Caution Fees</td><td>50,000</td><td>50,000</td><td></td></tr>
+                  <tr><td>Special Department Fees</td><td>60,000</td><td>60,000</td><td></td></tr>
+                  <tr><td>Graduation Charges</td><td></td><td>50,000</td><td>50,000</td></tr>
+                  <tr><td><strong>Total Charges</strong></td><td><strong>1,465,400</strong></td><td><strong>1,465,400</strong></td><td><strong>1,285,400</strong></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <ul class="list-clean soft" style="margin-top:10px;">
+              <li>Hostels available per year: <strong>340,000</strong> (not included above).</li>
+              <li>NHIF: if you already have a valid card, don’t pay again — attach a copy of your card to the bank slip.</li>
+              <li>Bring your bank slip when making payments and keep your copy.</li>
+              <li>Direct fees of <strong>365,400</strong> TSH are due at the beginning of the semester.</li>
+              <li>Tuition (<strong>1,100,000</strong> TSH) is paid in four equal installments.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Business Admin & Accounting/Finance -->
+      <div class="row" style="margin-bottom:18px;">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="card-min">
+            <h4>Certificate & Diploma in Business Administration; Accounting & Finance</h4>
+            <div class="table-responsive">
+              <table class="tbl">
+                <thead>
+                  <tr><th>Fee Description</th><th>NTA Level 4</th><th>NTA Level 5</th><th>NTA Level 6</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Tuition Fees</td><td>900,000</td><td>900,000</td><td>900,000</td></tr>
+                  <tr><td>Registration Charges</td><td>20,000</td><td>20,000</td><td></td></tr>
+                  <tr><td>NHIF Membership (annually)</td><td>50,400</td><td>50,400</td><td>50,400</td></tr>
+                  <tr><td>NACTVET Quality Assurance Fee</td><td>15,000</td><td>15,000</td><td>15,000</td></tr>
+                  <tr><td>Identity Card</td><td>10,000</td><td>10,000</td><td>10,000</td></tr>
+                  <tr><td>Exams Charges</td><td>30,000</td><td>30,000</td><td>30,000</td></tr>
+                  <tr><td>UATC Students Organization Fees</td><td>10,000</td><td>10,000</td><td>10,000</td></tr>
+                  <tr><td>Graduation Charges</td><td></td><td>30,000</td><td>30,000</td></tr>
+                  <tr><td><strong>Total Charges</strong></td><td><strong>1,065,400</strong></td><td><strong>1,065,400</strong></td><td><strong>1,015,400</strong></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <ul class="list-clean soft" style="margin-top:10px;">
+              <li>Hostels per year: <strong>340,000</strong> TSH (not included).</li>
+              <li>NHIF note: if you already have insurance, attach the card copy to your bank slip (don’t pay NHIF).</li>
+              <li>Bring and retain your bank slip copy.</li>
+              <li>Direct fees of <strong>165,400</strong> TSH at the beginning of the semester.</li>
+              <li>Tuition (<strong>900,000</strong> TSH) can be paid in full or in four equal installments (payments due on the 1st of each installment month, depending on intake).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Journalism & Media Production -->
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="card-min">
+            <h4>Certificate & Diploma in Journalism and Media Production</h4>
+            <div class="table-responsive">
+              <table class="tbl">
+                <thead>
+                  <tr><th>Fee Description</th><th>NTA Level 4</th><th>NTA Level 5</th><th>NTA Level 6</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Tuition Fees</td><td>1,200,000</td><td>1,200,000</td><td>1,200,000</td></tr>
+                  <tr><td>Registration Charges</td><td>20,000</td><td>20,000</td><td></td></tr>
+                  <tr><td>NHIF Membership (annually)</td><td>50,400</td><td>50,400</td><td>50,400</td></tr>
+                  <tr><td>NACTVET Quality Assurance Fee</td><td>15,000</td><td>15,000</td><td>15,000</td></tr>
+                  <tr><td>Identity Card</td><td>10,000</td><td>10,000</td><td>10,000</td></tr>
+                  <tr><td>Exams Charges</td><td>30,000</td><td>30,000</td><td>30,000</td></tr>
+                  <tr><td>UATC Students Organization Fees</td><td>10,000</td><td>10,000</td><td>10,000</td></tr>
+                  <tr><td>Graduation Charges</td><td></td><td>30,000</td><td>30,000</td></tr>
+                  <tr><td><strong>Total Charges</strong></td><td><strong>1,365,400</strong></td><td><strong>1,365,400</strong></td><td><strong>1,215,400</strong></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <ul class="list-clean soft" style="margin-top:10px;">
+              <li>Hostels per year: <strong>340,000</strong> TSH (not included).</li>
+              <li>NHIF: if you have a card, attach a copy to the bank slip (don’t pay NHIF again).</li>
+              <li>Bring and retain your bank slip copy.</li>
+              <li>Direct fees of <strong>165,400</strong> TSH at the beginning of the semester.</li>
+              <li>Tuition (<strong>1,200,000</strong> TSH) can be paid in full or four equal installments (payments due on the 1st of each installment month, depending on intake).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:16px;">
+        <div class="col-md-12 text-center">
+          <a id="adm-apply-bottom" class="btn btn-primary btn-quiet" target="_blank" href="http://localhost:3000/apply">Apply on OAS</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQs -->
+  <section class="probootstrap-section probootstrap-section" id="faq">
+    <div class="container">
+      <h3 class="text-center" style="margin-bottom:18px;">Frequently Asked Questions</h3>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+
+          <div class="faq-item">
+            <div class="faq-q"><strong>Which programs are available?</strong><span>+</span></div>
+            <div class="faq-a">Certificate & Diploma programs at NTA 4–6 in CIT, BIT, Business Administration, Accounting & Finance, and Journalism & Media Production.</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q"><strong>Can I pay tuition in installments?</strong><span>+</span></div>
+            <div class="faq-a">Yes. See each fee schedule above for installment notes (typically four equal installments).</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q"><strong>Do I need to pay NHIF if I already have insurance?</strong><span>+</span></div>
+            <div class="faq-a">No. Attach a copy of your valid insurance card to your bank slip instead.</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="probootstrap-cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="probootstrap-animate" data-animate-effect="fadeInRight">Ready to begin?</h2>
+          <a id="adm-cta-btn" href="http://localhost:3000/apply" target="_blank" role="button" class="btn btn-primary btn-lg btn-ghost probootstrap-animate btn-quiet" data-animate-effect="fadeInLeft">Apply Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="probootstrap-footer probootstrap-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="probootstrap-footer-widget">
+            <h3>About UATC</h3>
+            <p>Christian higher education in Kigamboni, Dar es Salaam—faith, innovation, and technical excellence.</p>
+            <h3>Social</h3>
+            <ul class="probootstrap-footer-social">
+              <li><a href="#"><i class="icon-twitter"></i></a></li>
+              <li><a href="#"><i class="icon-facebook"></i></a></li>
+              <li><a href="#"><i class="icon-instagram2"></i></a></li>
+              <li><a href="#"><i class="icon-linkedin"></i></a></li>
+              <li><a href="#"><i class="icon-youtube"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-md-push-1">
+          <div class="probootstrap-footer-widget">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="https://www.nactvet.go.tz/" target="_blank" rel="noopener">NACTVET</a></li>
+              <li><a href="https://www.heslb.go.tz/?lang=english" target="_blank" rel="noopener">HESLB</a></li>
+              <li><a href="http://localhost:3000/apply" target="_blank" rel="noopener">OAS</a></li>
+              <li><a href="https://www.uaut.ac.tz/" target="_blank" rel="noopener">UAUT</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="probootstrap-footer-widget">
+            <h3>Contact</h3>
+            <ul class="probootstrap-contact-info">
+              <li><i class="icon-location2"></i> <span>P.O.BOX 36246, Dar es Salaam, Tanzania</span></li>
+              <li><i class="icon-mail"></i><span>info@uatc.ac.tz</span></li>
+              <li><i class="icon-phone2"></i><span>+255 767 770 566 | +255 614 293 747</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="probootstrapopyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 text-left">
+            <p>&copy; 2025 United African Technical College. All Rights Reserved.</p>
+          </div>
+          <div class="col-md-4 probootstrap-back-to-top">
+            <p><a href="#" class="js-backtotop">Back to top <i class="icon-arrow-long-up"></i></a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<!-- Your JS bundle -->
+<script src="js/scripts.min.js"></script>
+<script src="js/main.min.js"></script>
+<script src="js/custom.js"></script>
+
+<script>
+  // Tiny FAQ toggle
+  document.addEventListener('DOMContentLoaded', function () {
+    Array.prototype.forEach.call(document.querySelectorAll('.faq-q'), function(q){
+      q.addEventListener('click', function(){
+        var a = this.nextElementSibling;
+        a.style.display = a.style.display === 'block' ? 'none' : 'block';
+        this.querySelector('span').textContent = a.style.display === 'block' ? '–' : '+';
+      });
+    });
+
+    // ---- Lightweight CMS binding for Admissions ----
+    fetch('data/admission.json')
+      .then(function(r){ return r.ok ? r.json() : null; })
+      .then(function(data){
+        if(!data) return;
+
+        // hero.title / hero.subtitle
+        if(data.hero){
+          if(data.hero.title)  document.getElementById('adm-hero-title').textContent = data.hero.title;
+          if(data.hero.subtitle) document.getElementById('adm-hero-subtitle').textContent = data.hero.subtitle;
+
+          // hero.pills (array of strings)
+          if(Array.isArray(data.hero.pills)){
+            var pillsHost = document.getElementById('adm-hero-pills');
+            if(pillsHost){
+              pillsHost.innerHTML = '';
+              data.hero.pills.forEach(function(p){
+                var s = document.createElement('span');
+                s.className = 'pill';
+                s.textContent = p;
+                pillsHost.appendChild(s);
+              });
+            }
+          }
+
+          // hero.buttons (label, href, variant)
+          function btnClass(variant){
+            if(variant === 'primary') return 'btn btn-primary btn-quiet';
+            if(variant === 'ghost')   return 'btn btn-default btn-ghost btn-quiet';
+            return 'btn btn-default btn-quiet';
+          }
+          if(Array.isArray(data.hero.buttons)){
+            var btnHost = document.getElementById('adm-hero-buttons');
+            if(btnHost){
+              btnHost.innerHTML = '';
+              data.hero.buttons.forEach(function(b){
+                var a = document.createElement('a');
+                a.className = btnClass(b.variant);
+                a.href = b.href || '#';
+                a.target = (b.href && b.href.indexOf('http') === 0) ? '_blank' : '';
+                a.textContent = b.label || 'Learn more';
+                btnHost.appendChild(a);
+              });
+            }
+            // also sync top-right nav "Apply Now" if a primary apply button exists
+            var apply = (data.hero.buttons || []).find(function(b){ return /apply/i.test(b.label || ''); });
+            if(apply && apply.href){
+              var navBtn = document.getElementById('adm-apply-nav');
+              if(navBtn){ navBtn.href = apply.href; }
+              var stepBtn = document.getElementById('adm-apply-btn');
+              if(stepBtn){ stepBtn.href = apply.href; }
+              var bottomBtn = document.getElementById('adm-apply-bottom');
+              if(bottomBtn){ bottomBtn.href = apply.href; }
+              var ctaBtn = document.getElementById('adm-cta-btn');
+              if(ctaBtn){ ctaBtn.href = apply.href; }
+            }
+          }
+        }
+      })
+      .catch(function(){ /* silent */});
+  });
+</script>
+</body>
+</html>

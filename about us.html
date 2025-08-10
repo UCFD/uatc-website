@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>About Us — United African Technical College</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Existing stack -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Open+Sans" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles-merged.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+
+  <style>
+    .hero-about { background:url('img/slider_3.jpg') center/cover no-repeat; position:relative; }
+    .hero-about .overlay { background:rgba(0,0,0,.45); padding:80px 0 50px; }
+    .pill { display:inline-block; padding:4px 10px; border-radius:999px; background:#fff2b3; color:#222; font-weight:700; font-size:12px; margin:2px 4px; }
+    .btn-quiet { padding:6px 14px; font-size:14px; line-height:1.2; }
+    .navbar .btn-primary { padding:6px 12px; font-size:14px; line-height:1.2; }
+
+    .card-min { background:#fff; border:1px solid #eee; border-radius:10px; padding:20px; height:100%; }
+    .soft { color:#666; }
+    .lead-tight { max-width:800px; margin:0 auto; }
+    .values .v { display:flex; gap:12px; align-items:flex-start; margin-bottom:10px; }
+    .values .icon { width:28px; height:28px; border-radius:50%; background:#ffcc00; display:inline-block; margin-top:2px; }
+
+    .metric { text-align:center; }
+    .metric .num { font-weight:700; font-size:28px; }
+    .metric .label { color:#666; font-size:13px; }
+
+    .timeline { position:relative; padding-left:24px; }
+    .timeline:before { content:""; position:absolute; left:10px; top:0; bottom:0; width:2px; background:#ffe48a; }
+    .t-item { position:relative; margin-bottom:16px; }
+    .t-item:before { content:""; position:absolute; left:-2px; top:4px; width:10px; height:10px; border-radius:50%; background:#ffcc00; }
+
+    .badge-row { display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+    .badge { border:1px solid #fbfbfb; background:#282831; padding:10px 14px; border-radius:10px; }
+
+    .profile { text-align:center; }
+    .profile img { max-width:140px; border-radius:10px; margin-bottom:10px; }
+  </style>
+</head>
+<body>
+<div class="probootstrap-page-wrapper">
+
+  <!-- Top strip -->
+  <div class="probootstrap-header-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 col-md-9 col-sm-9 probootstrap-top-quick-contact-info">
+          <span><i class="icon-location2"></i>P.O.BOX 36246, Dar es Salaam, Tanzania</span>
+          <span><i class="icon-phone2"></i>+255 767 770 566 | +255 614 293 747</span>
+          <span><i class="icon-mail"></i>info@uatc.ac.tz</span>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 probootstrap-top-social">
+          <ul>
+            <li><a href="#"><i class="icon-twitter"></i></a></li>
+            <li><a href="#"><i class="icon-facebook2"></i></a></li>
+            <li><a href="https://www.instagram.com/official_uatc/"><i class="icon-instagram2"></i></a></li>
+            <li><a href="#"><i class="icon-youtube"></i></a></li>
+            <li><a href="#" class="probootstrap-search-icon js-probootstrap-search"><i class="icon-search"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-default probootstrap-navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <div class="btn-more js-btn-more visible-xs"><a href="#"><i class="icon-dots-three-vertical"></i></a></div>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="sr-only">Toggle</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+        </button>
+        <img src="img/uatc-logo.png" alt="UATC Logo" style="height:45px;margin-right:10px;margin-top:20px;">
+      </div>
+      <div id="navbar-collapse" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="about us.html">About Us</a></li>
+          <li><a href="admission.html">Admissions</a></li>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a class="btn btn-primary" target="_blank" href="http://localhost:3000/apply">Apply Now</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero (CMS updates the title/subtitle) -->
+  <section class="probootstrap-section hero-about">
+    <div class="overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1 text-center section-heading probootstrap-animate" style="color:#fff;">
+            <h1 id="about-hero-title" class="mb0">About United African Technical College</h1>
+            <p id="about-hero-subtitle" class="lead lead-tight">
+              A Christian higher education community in Kigamboni empowering Africa through faith, character, and technical excellence.
+            </p>
+            <div style="margin-top:14px;">
+              <span class="pill">Kigamboni • Dar es Salaam</span>
+              <span class="pill">NTA Levels 4–6</span>
+              <span class="pill">ICT • Business • Media</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CMS Sections mount (NEW) -->
+  <section class="probootstrap-section probootstrap-bg-white probootstrap-border-top" id="about-sections"></section>
+
+  <!-- Mission / Vision / Values (kept) -->
+  <section class="probootstrap-section probootstrap-bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 probootstrap-animate">
+          <div class="card-min">
+            <h3>Our Mission</h3>
+            <p>To nurture professionals of character and competence who serve Tanzania and the world with integrity, practical skill, and a Christ-centered worldview.</p>
+          </div>
+        </div>
+        <div class="col-md-4 probootstrap-animate">
+          <div class="card-min">
+            <h3>Our Vision</h3>
+            <p>To be a leading technical college in Africa known for excellent teaching, applied research, and community impact.</p>
+          </div>
+        </div>
+        <div class="col-md-4 probootstrap-animate">
+          <div class="card-min values">
+            <h3>Our Values</h3>
+            <div class="v"><span class="icon"></span><div><strong>Faith & Character</strong><br><span class="soft">Christ-like leadership and service.</span></div></div>
+            <div class="v"><span class="icon"></span><div><strong>Excellence</strong><br><span class="soft">High standards in teaching and practice.</span></div></div>
+            <div class="v"><span class="icon"></span><div><strong>Innovation</strong><br><span class="soft">Creative, real-world problem solving.</span></div></div>
+            <div class="v"><span class="icon"></span><div><strong>Community</strong><br><span class="soft">Supportive campus life and outreach.</span></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership (kept) -->
+  <section class="probootstrap-section probootstrap-section-colored">
+    <div class="container">
+      <h3 class="text-center" style="margin-bottom:16px;">Leadership</h3>
+      <div class="row">
+        <div class="col-sm-4 probootstrap-animate">
+          <div class="card-min profile">
+            <img src="img/Emmanuel.jpeg" alt="Leader">
+            <h4>DP ARC</h4>
+            <p class="soft">Mr. Emmanuel Mazengo</p>
+          </div>
+        </div>
+        <div class="col-sm-4 probootstrap-animate">
+          <div class="card-min profile">
+            <img src="img/slider_5.png" alt="Leader">
+            <h4>Principal</h4>
+            <p class="soft">Prof. Jin Ki Hwang.</p>
+          </div>
+        </div>
+        <div class="col-sm-4 probootstrap-animate">
+          <div class="card-min profile">
+            <img src="img/Rehema.png" alt="Leader">
+            <h4>DP FA</h4>
+            <p class="soft">Ms. Rehema Miage.</p>
+          </div>
+        </div>
+      </div>
+      <p class="text-center" style="margin-top:10px;">
+        <a href="academics.html#tab-people" class="btn btn-default btn-ghost btn-quiet">See Staff Directory</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Visit / Map (kept) -->
+  <section class="probootstrap-section probootstrap-bg-white probootstrap-border-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 probootstrap-animate">
+          <div class="card-min">
+            <h3>Visit UATC</h3>
+            <p>Kigamboni, Dar es Salaam. Reach us for campus tours, outreach visits, and events.</p>
+            <p class="soft">Email: info@uatc.ac.tz &nbsp;|&nbsp; Phone: +255 767 770 566 / +255 614 293 747</p>
+            <a href="contact.html" class="btn btn-primary btn-quiet">Contact Us</a>
+          </div>
+        </div>
+        <div class="col-md-6 probootstrap-animate">
+          <div class="card-min" style="padding:0;">
+            <iframe
+              title="UATC Map"
+              src="https://www.google.com/maps?q=Kigamboni,%20Dar%20es%20Salaam&output=embed"
+              style="width:100%; height:280px; border:0;"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA (kept) -->
+  <section class="probootstrap-cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="probootstrap-animate" data-animate-effect="fadeInRight">Ready to study at UATC?</h2>
+          <a href="http://localhost:3000/apply" target="_blank" role="button" class="btn btn-primary btn-lg btn-ghost probootstrap-animate btn-quiet" data-animate-effect="fadeInLeft">Apply Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="probootstrap-footer probootstrap-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="probootstrap-footer-widget">
+            <h3>About UATC</h3>
+            <p>Christian higher education in Kigamboni, Dar es Salaam—faith, innovation, and technical excellence.</p>
+            <h3>Social</h3>
+            <ul class="probootstrap-footer-social">
+              <li><a href="#"><i class="icon-twitter"></i></a></li>
+              <li><a href="#"><i class="icon-facebook"></i></a></li>
+              <li><a href="#"><i class="icon-instagram2"></i></a></li>
+              <li><a href="#"><i class="icon-linkedin"></i></a></li>
+              <li><a href="#"><i class="icon-youtube"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-md-push-1">
+          <div class="probootstrap-footer-widget">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="https://www.nactvet.go.tz/" target="_blank" rel="noopener">NACTVET</a></li>
+              <li><a href="https://www.heslb.go.tz/?lang=english" target="_blank" rel="noopener">HESLB</a></li>
+              <li><a href="http://localhost:3000/apply" target="_blank" rel="noopener">OAS</a></li>
+              <li><a href="https://www.uaut.ac.tz/" target="_blank" rel="noopener">UAUT</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="probootstrap-footer-widget">
+            <h3>Contact</h3>
+            <ul class="probootstrap-contact-info">
+              <li><i class="icon-location2"></i> <span>P.O.BOX 36246, Dar es Salaam, Tanzania</span></li>
+              <li><i class="icon-mail"></i><span>info@uatc.ac.tz</span></li>
+              <li><i class="icon-phone2"></i><span>+255 767 770 566 | +255 614 293 747</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="probootstrap-copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 text-left">
+            <p>&copy; 2025 United African Technical College. All Rights Reserved.</p>
+          </div>
+          <div class="col-md-4 probootstrap-back-to-top">
+            <p><a href="#" class="js-backtotop">Back to top <i class="icon-arrow-long-up"></i></a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<!-- Existing JS -->
+<script src="js/scripts.min.js"></script>
+<script src="js/main.min.js"></script>
+<script src="js/custom.js"></script>
+
+<!-- Data helpers + page renderer -->
+<script src="js/cms-data.js"></script>
+<script src="js/page-data.js"></script>
+<script>
+  // Render About page from CMS JSON:
+  // - Updates hero (title/subtitle) via IDs
+  // - Renders flexible sections into #about-sections
+  if (window.UATCPage && UATCPage.renderPage) {
+    UATCPage.renderPage('data/about.json', {
+      heroTitleId: 'about-hero-title',
+      heroSubtitleId: 'about-hero-subtitle',
+      sectionsMountId: 'about-sections'
+    });
+  }
+</script>
+</body>
+</html>
