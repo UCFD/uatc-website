@@ -1,18 +1,10 @@
 {
   "hero": {
     "title": "Welcome to United African Technical College",
-    "subtitle": "",
+    
     "buttons": [
-      {
-        "label": "Apply Now",
-        "href": "http://localhost:3000/apply",
-        "variant": "primary"
-      },
-      {
-        "label": "Contact Us",
-        "href": "contact.html",
-        "variant": "ghost"
-      }
+      { "label": "Apply Now", "href": "http://localhost:3000/apply", "variant": "primary" },
+      { "label": "Contact Us", "href": "contact.html", "variant": "ghost" }
     ]
   },
   "sections": [
@@ -33,7 +25,7 @@
     },
     {
       "type": "richtext",
-      "title": "Programs ",
+      "title": "Programs Offered",
       "html": "<p>We offer NTA Level 4, 5, and 6 programs in Business Administration, Journalism and Mass Communication, Computer Engineering, and more.</p>"
     },
     {

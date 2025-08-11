@@ -24,6 +24,18 @@
       <script src="js/vendor/html5shiv.min.js"></script>
       <script src="js/vendor/respond.min.js"></script>
     <![endif]-->
+
+    <style>
+      /* Consistent article image formatting */
+      .article-img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        border-radius: 10px;
+      }
+      .list-tight li { margin-bottom: .45rem; }
+    </style>
   </head>
   <body>
 
@@ -35,8 +47,7 @@
     </div>
     
     <div class="probootstrap-page-wrapper">
-      <!-- Fixed navbar -->
-      
+      <!-- Top strip -->
       <div class="probootstrap-header-top">
         <div class="container">
           <div class="row">
@@ -57,6 +68,8 @@
           </div>
         </div>
       </div>
+
+      <!-- Navbar -->
       <nav class="navbar navbar-default probootstrap-navbar">
         <div class="container">
           <div class="navbar-header">
@@ -69,11 +82,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            
- 
-    <img src="img/uatc-logo.png" alt="UATC Logo" style="height: 45px; margin-right: 10px; margin-top: 20px;">
-   
-  </a>
+            <img src="img/uatc-logo.png" alt="UATC Logo" style="height:45px; margin-right:10px; margin-top:20px;">
           </div>
 
           <div id="navbar-collapse" class="navbar-collapse collapse">
@@ -89,41 +98,46 @@
         </div>
       </nav>
 
-  <!-- Hero Section -->
-  <section class="probootstrap-section probootstrap-section-colored">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-left section-heading probootstrap-animate">
-          <h1 class="mb0">Rev. Jong Hyuk Kim’s Powerful Message to Students</h1>
-          <p><strong>February 19, 2025</strong></p>
+      <!-- Hero Section -->
+      <section class="probootstrap-section probootstrap-section-colored">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-left section-heading probootstrap-animate">
+              <h1 class="mb0">Rev. Jong Hyuk Kim’s Powerful Message to Students</h1>
+              <p><strong>February 19, 2025</strong></p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- Article Content -->
-  <section class="probootstrap-section py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-        <img src="img/message_to_students_photo.webp" alt="Rev. Jong Hyuk Kim delivering sermon" class="img-responsive img-thumbnail" style="width: 1000%; max-width: 1125px; height: auto; margin: 0 auto; border-radius: 10px;">
-      </div>
-        <div class="col-md-12 probootstrap-text">
-          <p></br>During the recent visit of the General Assembly leadership to the university, <strong>Rev. Jong Hyuk Kim</strong>, Moderator of the General Assembly of the Presbyterian Church in Korea (Hapdong), delivered a powerful sermon to students and faculty members.</p>
+      <!-- Article Content -->
+      <section class="probootstrap-section py-5">
+        <div class="container">
+          <div class="row">
+            <!-- Image column -->
+            <div class="col-md-6 col-sm-12">
+              <img 
+                src="img/message_to_students_photo.webp" 
+                alt="Rev. Jong Hyuk Kim delivering sermon" 
+                class="img-responsive img-thumbnail article-img">
+            </div>
 
-          <p>Preaching from <strong>Acts 17:10‑15</strong> on the theme <em>“The Bible and the Life of Faith,”</em> he imparted deep spiritual insight, touching the hearts of faculty members and students alike.</p>
+            <!-- Text column -->
+            <div class="col-md-6 col-sm-12 probootstrap-text">
+              <p>During the recent visit of the General Assembly leadership to the university, <strong>Rev. Jong Hyuk Kim</strong>, Moderator of the General Assembly of the Presbyterian Church in Korea (Hapdong), delivered a powerful sermon to students and faculty members.</p>
 
-          <p>The message emphasized the importance of being rooted in Scripture and holding firm to God’s Word as the true foundation for faith, growth, and leadership in today’s world.</p>
+              <p>Preaching from <strong>Acts 17:10-15</strong> on the theme <em>“The Bible and the Life of Faith,”</em> he imparted deep spiritual insight, touching the hearts of faculty members and students alike.</p>
 
-          <p>The event was part of a series of spiritual engagements aimed at nurturing the spiritual well-being of the UATC community while building strong global partnerships with mission-driven institutions.</p>
+              <p>The message emphasized the importance of being rooted in Scripture and holding firm to God’s Word as the true foundation for faith, growth, and leadership in today’s world.</p>
 
-          
+              <p>The event was part of a series of spiritual engagements aimed at nurturing the spiritual well-being of the UATC community while building strong global partnerships with mission-driven institutions.</p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-<section class="probootstrap-cta">
+      <!-- CTA -->
+      <section class="probootstrap-cta">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -133,13 +147,15 @@
           </div>
         </div>
       </section>
+
+      <!-- Footer -->
       <footer class="probootstrap-footer probootstrap-bg">
         <div class="container">
           <div class="row">
             <div class="col-md-4">
               <div class="probootstrap-footer-widget">
-                <h3>About The School</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro provident suscipit natus a cupiditate ab minus illum quaerat maxime inventore Ea consequatur consectetur hic provident dolor ab aliquam eveniet alias</p>
+                <h3>About UATC</h3>
+                <p>Christian higher education in Kigamboni, Dar es Salaam—faith, innovation, and technical excellence.</p>
                 <h3>Social</h3>
                 <ul class="probootstrap-footer-social">
                   <li><a href="#"><i class="icon-twitter"></i></a></li>
@@ -157,7 +173,6 @@
                 <ul>
                   <li><a href="https://www.nactvet.go.tz/">NACTVET</a></li>
                   <li><a href="https://www.heslb.go.tz/?lang=english">HESLB</a></li>
-                  
                   <li><a href="http://localhost:3000/apply">OAS</a></li>
                   <li><a href="https://www.uaut.ac.tz/">UAUT</a></li>
                 </ul>
@@ -173,10 +188,8 @@
                 </ul>
               </div>
             </div>
-           
           </div>
           <!-- END row -->
-          
         </div>
 
         <div class="probootstrap-copyright">
@@ -195,7 +208,6 @@
 
     </div>
     <!-- END wrapper -->
-    
 
     <script src="js/scripts.min.js"></script>
     <script src="js/main.min.js"></script>
