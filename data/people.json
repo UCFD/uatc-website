@@ -5,7 +5,7 @@
       "title": "Head of Department",
       "position": "Tutor",
       "email": "hodscience@uatc.ac.tz",
-      "photoUrl": "img/Asim.png",
+      "photoUrl": "img/Mkinga.png",
       "department": "Science and Technology"
     },
     {
@@ -17,11 +17,11 @@
       "department": "Business Management"
     },
     {
-      "name": "Godfrey Francis",
+      "name": "Mr. Godfrey Francis",
       "title": "Head of Examinations",
       "position": "Tutor",
       "department": "Science and Technology",
-      "email": "godfreyfrancis1000@gmail.com",
+      "email": "exams@uatc.ac.tz",
       "photoUrl": "/img/uploads/chatgpt-image-aug-5-2025-12_08_18-am.png"
     }
   ]

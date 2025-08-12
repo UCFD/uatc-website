@@ -302,12 +302,12 @@
             col.innerHTML =
               '<div class="probootstrap-teacher text-center" style="opacity:1;visibility:visible;">' +
               '  <figure class="media" style="opacity:1;visibility:visible;">' +
-              '    <img class="img-responsive" src="' + (p.photoUrl || "img/profile-placeholder.png") + '" alt="' + (p.name || "Profile") + '">' +
+              '    <img class="img-responsive" src="' + ((p.photoUrl && p.photoUrl[0] !== '/' ? p.photoUrl : (p.photoUrl || '')).replace(/^\/+/, '')) + '" alt="' + (p.name || "Profile") + '">' +
               "  </figure>" +
               '  <div class="text" style="opacity:1;visibility:visible;">' +
               "    <h3>" + (p.name || "") + "</h3>" +
               (p.title ? "    <p><em>" + p.title + "</em></p>" : "") +
-              (p.position || p.department ? "    <p>" + (p.position || p.department) + "</p>" : "") +
+              ((p.position || p.department) ? "    <p>" + (p.position || p.department) + "</p>" : "") +
               (p.email ? '    <p><a href=\"mailto:' + p.email + '\">' + p.email + "</a></p>" : "") +
               "  </div>" +
               "</div>";
@@ -327,7 +327,7 @@
           deptSelect.innerHTML =
             '<option value="">All departments</option>' +
             sorted.map(function (d) {
-              return '<option value="' + d.replace(/"/g, '&quot;') + '">' + d + "</option>";
+              return '<option value="' + d.replace(/\"/g, '&quot;') + '">' + d + "</option>";
             }).join("");
         }
 
@@ -362,7 +362,12 @@
             return r.json();
           })
           .then(function (data) {
+            // ===== Accept both shapes: Array OR { people: [...] } =====
+            if (data && Array.isArray(data.people)) {
+              data = data.people;
+            }
             if (!Array.isArray(data)) data = [];
+
             allStaff = data.map(function (p) {
               return {
                 name: p.name || "",
